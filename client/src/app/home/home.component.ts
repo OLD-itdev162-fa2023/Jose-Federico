@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('http://localhost:5223/api/posts').subscribe(
+    this.http.get('http://localhost:5174/api/posts').subscribe(
       response => { this.posts = response; },
       error => { console.log(error) }
     );
